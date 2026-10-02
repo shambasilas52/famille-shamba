@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta name="google-site-verification" content="NMqmvaXxWT1HdzpRYNrJL4tqoFRIh-F8XrAWiq3nBeI" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbre Généalogique - Famille SHAMBA</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            padding: 20px 10px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: 0 auto 35px auto;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            color: #1e3c72;
+            border-bottom: 3px solid #1e3c72;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cards-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+            border-top: 4px solid #1e3c72;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card.parent-card {
+            border-top-color: #e74c3c;
+        }
+
+        .card.spouse-card {
+            border-top-color: #e67e22;
+        }
+
+        .card.child-card {
+            border-top-color: #27ae60;
+        }
+
+        .photo-avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #e9ecef;
+            margin: 0 auto 12px auto;
+            display: block;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            word-wrap: break-word;
+        }
+
+        .role {
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .sub-family {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-left: 6px solid #2980b9;
+        }
+
+        .sub-family-title {
+            font-size: 1.2rem;
+            color: #2980b9;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🏛 La Grande Famille SHAMBA</h1>
+        <p>Présentation des membres et sous-familles</p>
+    </header>
+
+    <!-- SECTION 1 : LES PARENTS -->
+    <section>
+        <h2 class="section-title">👑 1. Les Parents</h2>
+        <div class="cards-grid">
+            <div class="card parent-card">
+                <img src="francois.jpg" alt="SHAMBA MUKONGO FRANÇOIS" class="photo-avatar">
+                <h3>SHAMBA MUKONGO FRANÇOIS</h3>
+                <div class="role">Père</div>
+            </div>
+            <div class="card parent-card">
+                <img src="esther.jpg" alt="MBULU KWETE ESTHER" class="photo-avatar">
+                <h3>MBULU KWETE ESTHER</h3>
+                <div class="role">Mère</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2 : LES ENFANTS DIRECTS -->
+    <section>
+        <h2 class="section-title">👶 2. Les Enfants</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <img src="celestin.jpg" alt="KANKU BOPE CÉLESTIN" class="photo-avatar">
+                <h3>KANKU BOPE CÉLESTIN</h3>
+                <div class="role">Fils</div>
+            </div>
+            <div class="card">
+                <img src="sylvain.jpg" alt="NKANA SHAMBA SYLVAIN" class="photo-avatar">
+                <h3>NKANA SHAMBA SYLVAIN</h3>
+                <div class="role">Fils</div>
+            </div>
+            <div class="card">
+                <img src="ruth.jpg" alt="NGENYI SHAMBA RUTH" class="photo-avatar">
+                <h3>NGENYI SHAMBA RUTH</h3>
+                <div class="role">Fille</div>
+            </div>
+            <div class="card">
+                <img src="rebecca.jpg" alt="KULONDI SHAMBA REBECCA" class="photo-avatar">
+                <h3>KULONDI SHAMBA REBECCA</h3>
+                <div class="role">Fille</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 : LES SOUS-FAMILLES -->
+    <section>
+        <h2 class="section-title">🏡 3. Les Sous-Familles</h2>
+
+        <!-- FAMILLE KANKU -->
+        <div class="sub-family">
+            <h3 class="sub-family-title">🔹 La Famille KANKU</h3>
+            
+            <p style="margin-bottom: 10px; font-weight: bold; color: #555;">Épouse :</p>
+            <div class="cards-grid" style="justify-content: flex-start; margin-bottom: 20px;">
+                <div class="card spouse-card">
+                    <img src="angelique.jpg" alt="MBULU SHAMBA ANGÉLIQUE" class="photo-avatar">
+                    <h3>MBULU SHAMBA ANGÉLIQUE</h3>
+                    <div class="role">Épouse de Célestin</div>
+                </div>
+            </div>
+
+            <p style="margin-bottom: 10px; font-weight: bold; color: #555;">Enfants :</p>
+            <div class="cards-grid">
+                <div class="card child-card">
+                    <img src="claudine.jpg" alt="MUJINGA KANKU CLAUDINE" class="photo-avatar">
+                    <h3>MUJINGA KANKU CLAUDINE</h3>
+                    <div class="role">Enfant 1</div>
+                </div>
+                <div class="card child-card">
+                    <img src="dan_berlue.jpg" alt="MWADI KANKU DAN-BERLUE" class="photo-avatar">
+                    <h3>MWADI KANKU DAN-BERLUE</h3>
+                    <div class="role">Enfant 2</div>
+                </div>
+                <div class="card child-card">
+                    <img src="gradivi_celestin.jpg" alt="KONGO KANKU GRADIVI-CELESTIN" class="photo-avatar">
+                    <h3>KONGO KANKU GRADIVI-CELESTIN</h3>
+                    <div class="role">Enfant 3</div>
+                </div>
+                <div class="card child-card">
+                    <img src="eucrasie.jpg" alt="SHAMBA KANKU EUCRASIE" class="photo-avatar">
+                    <h3>SHAMBA KANKU EUCRASIE</h3>
+                    <div class="role">Enfant 4</div>
+                </div>
+                <div class="card child-card">
+                    <img src="esthancel.jpg" alt="MBULU KANKU ESTHANCEL" class="photo-avatar">
+                    <h3>MBULU KANKU ESTHANCEL</h3>
+                    <div class="role">Enfant 5</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAMILLE NKANA -->
+        <div class="sub-family">
+            <h3 class="sub-family-title">🔹 La Famille NKANA</h3>
+            
+            <p style="margin-bottom: 10px; font-weight: bold; color: #555;">Épouse :</p>
+            <div class="cards-grid" style="justify-content: flex-start; margin-bottom: 20px;">
+                <div class="card spouse-card">
+                    <img src="gallyne.jpg" alt="GALLYNE KYAMA KATUTA" class="photo-avatar">
+                    <h3>GALLYNE KYAMA KATUTA</h3>
+                    <div class="role">Épouse de Sylvain</div>
+                </div>
+            </div>
+
+            <p style="margin-bottom: 10px; font-weight: bold; color: #555;">Enfants :</p>
+            <div class="cards-grid">
+                <div class="card child-card">
+                    <img src="pronel.jpg" alt="PRONEL NKANA" class="photo-avatar">
+                    <h3>PRONEL NKANA</h3>
+                    <div class="role">Enfant 1</div>
+                </div>
+                <div class="card child-card">
+                    <img src="granel.jpg" alt="GRANEL NKANA" class="photo-avatar">
+                    <h3>GRANEL NKANA</h3>
+                    <div class="role">Enfant 2</div>
+                </div>
+                <div class="card child-card">
+                    <img src="consolate.jpg" alt="CONSOLATE NKANA" class="photo-avatar">
+                    <h3>CONSOLATE NKANA</h3>
+                    <div class="role">Enfant 3</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Projet Famille SHAMBA — Hébergé localement avec Termux</p>
+    </footer>
+
+</body>
+</html>
+
